@@ -157,16 +157,6 @@ aside .form input {
   flex-flow: column wrap; 
 }
 
-
-.features .content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 86%;
-  margin: 0px;
-}
-
 .features article {
   display: flex;
   justify-content: center;
@@ -176,14 +166,19 @@ aside .form input {
   text-align: center;
 }
 
-.reviews h3 {
-  width: 81%;
+.reviews h2 {
+  width: 100%;
+  margin-left: 0px;
+  
 }
 
 .reviews {
   display: flex;
   align-items: center;
   margin: 0px 20px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 55px 0px 50px 0px;
 }
 
 /*--- Footer - social icons ---*/
@@ -208,22 +203,23 @@ aside .form input {
   .faqs {
     display: flex;
     align-items: center;
-    flex-flow: row wrap;
     
+    flex-flow: row wrap;  
     margin: 0px 20px;
-    width: 90%;
+    width: 95%;
     
   }
 
-  .faqs .questions .answers {
-    margin: 0 20px;
+  .faqs .questions {
+    width: 100%;
+    margin: 0 0px;
     padding-bottom: 53px;
   }
 /*=========================================================
   ABOUT
   =========================================================*/
 
-  .mission .mission-content {
+  .mission-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -253,8 +249,8 @@ aside .form input {
 
   .contact-section {
     margin: 0px 20px;
-
   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -343,16 +339,361 @@ aside .form input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles */
+  
+/*================================================
+               HOMEPAGE
+  ================================================*/
+
+
+  header {
+    display: flex;
+    width: 85%;
+    margin: 0px 52px;
+    
+  }
+  
+  header .content-wrapper {
+    display: flex;    
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  header nav {
+    width: 25%;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+  }
+
+  main {
+    width: 85%;
+    margin: 0px 52px;
+  }
+
+  main .hero-area h1 {
+    padding-left: 0;
+    width: 100%;
+  }
+
+
+  aside {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    
+  }
+
+  aside .form-description {
+    width: 45%;
+    padding: 50px 0 70px 0;
+    
+  }
+
+  aside .form {
+    width: 45%;
+    padding-top: 50px;
+  }
+
+  .form-description {
+    margin-left: 0;
+  }
+
+  .features {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    padding: 100px 52px 90px 52px;
+  }
+
+  .features article {
+    width: 50%;
+  }
+
+  .reviews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;   
+  }
+
+  .reviews img, 
+  .reviews article {
+    width: 48%;
+  }
+
+  footer {
+    max-width: 85%;
+    margin: 0px 52px;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer-content .contact,
+  .footer-content .social {
+    width: 40%;
+  }
+
+/*========================================================
+                     FAQ - tablet styles
+  ========================================================*/
+
+  .faqs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0;
+  }
+
+  .faq-header {
+    width: 100%;
+  }
+
+  .faqs .questions {
+    width: 40%;
+  }
+
+/*========================================================
+                     FAQ - tablet styles
+  ========================================================*/
+
+  .mission {
+    margin: 100px 0px;
+    max-width: 100%;
+    padding: 0;
+    
+  }
+
+  .mission-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mission-content .detailed-mission1,
+  .mission-content .detailed-mission2 {
+    width: 45%;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+  .contact-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contact-section h2 {
+    width: 100%;
+  }
+
+  .general-contact,
+  .facilitator-contact {
+    width: 45%;
+  }
+
+
+
+
+} 
+
+
+/*--------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+  /* desktop styles */
+  
+/*================================================
+               HOMEPAGE
+  ================================================*/
+
+  header {
+    display: flex;
+    max-width: 80%;
+    margin: 0px 100px;
+  }
+  
+  header .content-wrapper {
+    display: flex;    
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;   
+  }
+
+  header nav {
+    width: 25%;
 }
+
+  header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;   
+  }
+
+  main {
+    max-width: 80%;
+    margin: 0px 100px;
+  }
+
+  main .hero-area h1 {
+    padding-left: 0;
+    width: 100%;
+  }
+
+
+  aside {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;   
+  }
+
+  aside .form-description {
+    width: 35%;
+    padding: 50px 65px 50px 65px;   
+  }
+
+  aside .form {
+    width: 35%;
+    padding: 50px 65px 50px 65px;
+  }
+
+  .form-description {
+    margin-left: 0;
+  }
+
+  .features {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    padding: 100px 100px 90px 100px;
+  }
+
+  .features article {
+    width: 30%;
+  }
+
+  .reviews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;   
+  }
+
+  .reviews img, 
+  .reviews article {
+    width: 48%;
+  }
+
+  footer {
+    max-width: 80%;
+    margin: 0px 100px;
+}
+
+  footer .footer-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0px;    
+}
+
+  .footer-content .contact,
+  .footer-content .social {
+    width: 40%;
+    margin: 0;
+  }
+
+/*========================================================
+                     FAQ - desktop styles
+  ========================================================*/
+
+  .faqs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0px;
+  }
+
+  .faq-header {
+    width: 100%;
+  }
+
+  .faqs .questions {
+    width: 40%;
+  }
+
+/*========================================================
+                     FAQ - tablet styles
+  ========================================================*/
+
+  .mission {
+    margin: 100px 0px;
+    max-width: 100%;
+    padding: 0;
+    
+  }
+
+  .mission-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mission-content .detailed-mission1,
+  .mission-content .detailed-mission2 {
+    width: 45%;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+  .contact-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contact-section h2 {
+    width: 100%;
+  }
+
+  .general-contact,
+  .facilitator-contact {
+    width: 45%;
+  }
+  
+} 
 
 /* ==========================================================================
    Print styles.
