@@ -87,6 +87,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*========================= General styles ===========================*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  line-height: 55px;
+}
+
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h4  {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+
+
+
 /*=========================== HOMEPAGE ===========================*/
 * {
   outline: dotted red;
@@ -692,7 +734,7 @@ aside .form input {
   .facilitator-contact {
     width: 45%;
   }
-  
+
 } 
 
 /* ==========================================================================
