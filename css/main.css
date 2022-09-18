@@ -141,6 +141,15 @@ p {
   font-size: 1.17em;
 }
 
+img { 
+	width: 100%;
+}
+ 
+figure {
+        margin: 0;
+}
+
+
 
 /*=========================== HOMEPAGE ===========================*/
 * {
@@ -166,6 +175,14 @@ header {
   margin: 0px;
   width: 100%;
   
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -205,13 +222,19 @@ header .content-wrapper {
 /*--- Main section - hero area ---*/
 
 .hero-area h1 {
-  display: flex;
   text-align: left;
-  align-items: center;
   padding-left: 20px;
   color: #e2e3ed;
   font-size: 3em;
   margin-top: 0px;
+}
+
+.hero-area {
+  background: url("../img/jake-melara-30679-unsplash.jpg") center #333;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap; 
+  height: 500px;
 }
 
 /*--- Aside ---*/
@@ -267,12 +290,21 @@ input[type=button] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 0px;
+  margin: 0px;
   padding-left: 20px;
   padding-right: 20px;
   flex-flow: column wrap;
-  width: 100%; 
+  width: 100%;
+  box-sizing: border-box;
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333; 
+  background-size: cover;
 }
+
+.features h2 {
+  width: 100%;
+  margin-left: 0;
+}
+
 
 .features article {
   display: flex;
@@ -287,8 +319,7 @@ input[type=button] {
 
 .reviews h2 {
   width: 100%;
-  margin-left: 0px;
-  
+  margin-left: 0px;  
 }
 
 .reviews {
@@ -838,8 +869,7 @@ input[type=button] {
   }
 
   footer {
-    width: 100%;
-    
+    width: 100%;   
  
 }
 
