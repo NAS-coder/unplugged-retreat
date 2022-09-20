@@ -315,6 +315,12 @@ input[type=button] {
   text-align: center;
   font: normal 1.17em;
   color: #e1e2ea;
+  flex-flow: column nowrap;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .reviews h2 {
