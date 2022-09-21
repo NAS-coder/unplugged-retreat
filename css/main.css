@@ -153,8 +153,7 @@ figure {
 
 /*=========================== HOMEPAGE ===========================*/
 * {
-  outline: dotted red;
-  
+  outline: dotted red;  
 } 
 
 
@@ -343,11 +342,23 @@ input[type=button] {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
 }
 
+.social-icons p a {
+  color: #e2e3ed;
+  font-size: 1.5em;
+  
+}
+
+.social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 2.25em;
+  height: 2.25em;
+}
 .footer-content {
   text-align: center;
   width: 55%;
@@ -628,17 +639,37 @@ input[type=button] {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-left: 70px;
-    margin-right: 70px;     
+    margin-right: 70px;      
   }
 
-  .reviews img {
-    width: 45%;
+  .review-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;  
   }
 
-  .reviews article {
-    width: 50%;  
+  .review-wrapper figure {
+    width: 49%;
+    padding: 0; 
+  }
+
+  .detailed-review {
+    width: 49%;
+    padding: 0px;
+    font-size: 0.8em;
+    margin: 0;
   }
   
+  .detailed-review h3 {
+    font-size: 1.5em;
+  }
+
+  .detailed-review p {
+    line-height: 1.25em;
+  }
 
   footer {
     width: 100%;
@@ -863,14 +894,40 @@ input[type=button] {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-left: 160px;
-    margin-right: 160px;   
+    margin-left: 70px;
+    margin-right: 70px;      
   }
 
-  .reviews img, 
-  .reviews article {
-    width: 48%;
+  .review-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;  
   }
+
+  .review-wrapper figure {
+    width: 49%;
+    padding: 0; 
+  }
+
+  .detailed-review {
+    width: 49%;
+    padding: 0px;
+    font-size: 1.125em;
+    margin: 0;
+  }
+  
+  .detailed-review h3 {
+    font-size: 1.875em;
+  }
+
+  .detailed-review p {
+    line-height: 1.25em;
+  }
+
+  
 
   footer {
     width: 100%;   
