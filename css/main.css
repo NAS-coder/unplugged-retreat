@@ -225,7 +225,8 @@ header .content-wrapper {
   padding-left: 20px;
   color: #e2e3ed;
   font-size: 3em;
-  margin-top: 0px;
+  margin-top: 100px;
+  max-width: 80%;
 }
 
 .hero-area {
@@ -410,7 +411,7 @@ input[type=button] {
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
-    padding: 0 2.19em;
+    padding: 5em 2.19em;
     box-sizing: border-box;
   }  
 
@@ -429,7 +430,7 @@ input[type=button] {
   }
 
   .contact-section {
-    padding: 0 2.19em;
+    padding: 5em 2.19em;
     margin-bottom: 0;
   }
 
@@ -592,6 +593,7 @@ input[type=button] {
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 100px;
   }
 
   aside .form-description {
@@ -658,7 +660,7 @@ input[type=button] {
 
   .detailed-review {
     width: 49%;
-    padding: 0px;
+    padding-top: 0px;
     font-size: 0.8em;
     margin: 0;
   }
@@ -756,13 +758,11 @@ input[type=button] {
     padding: 0px;  
   }
 
- 
-
   .contact-section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 4.375em;
+    padding: 5em 4.375em;
     box-sizing: border-box;
     margin: 0;
     width: 100%;
@@ -853,6 +853,7 @@ input[type=button] {
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 150px;
     
   }
 
@@ -1016,7 +1017,7 @@ input[type=button] {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 10em;
+    padding: 5em 10em;
     box-sizing: border-box;
     margin: 0;
     width: 100%;
