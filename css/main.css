@@ -152,9 +152,9 @@ figure {
 
 
 /*=========================== HOMEPAGE ===========================*/
-* {
+/* {
   outline: dotted red;  
-} 
+} */
 
 
 /*--- header/footer ---*/
@@ -921,7 +921,7 @@ input[type=button] {
   }
   
   .detailed-review h3 {
-    font-size: 1.875em;
+    font-size: 2em;
   }
 
   .detailed-review p {
